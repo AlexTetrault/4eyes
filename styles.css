@@ -1,0 +1,245 @@
+.side-selection-btn {
+  text-align: left;
+  padding-left: 10px;
+  font-size: 20;
+  height: 60px;
+  color: #ede772;
+}
+
+.side-selection__new-btn {
+  height: 60px;
+  font-size: 20px;
+  margin-right: 5px;
+  color: #ede772;
+}
+
+#name-age-container {
+  margin: 25px;
+}
+
+.side-selection__btn-group {
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+
+#side-selection__last-btn-group {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+
+#selected-patient__full-name {
+  font-size: 30px;
+  text-align: center;
+  color: #ede772;
+}
+
+#selected-patient__age {
+  color: #ede7728c;
+  text-align: center;
+  font-size: 20px;
+}
+
+#selected-patient__family-info-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  width: 100%;
+  border-style: solid;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #012840;
+  color: black;
+}
+
+.family-info {
+  font-size: 25px;
+  margin: 10px;
+  display: inline-flex;
+  color: #ede772;
+}
+
+.info-input {
+  margin-left: 10px;
+  background-color: #011526;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  color: #ede772;
+  font-size: 20px;
+}
+
+#family-member-selector {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  color: #ede772;
+  background-color: #011526;
+  padding: 5px;
+  font-size: 20px;
+  border-color: black;
+}
+
+#family-select-add {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.add-family-btn {
+  height: 50px;
+  color: #ede772;
+  font-size: 20px;
+  margin-right: 5px;
+  background-color: #011526;
+}
+
+#family-notes {
+  width: 100%;
+  height: 100%;
+  background-color: #012840;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  color: #ede772;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 3fr;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#navigation-name-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 0.5fr;
+  width: 100%;
+}
+
+.left-nav-btn {
+  width: 100px;
+  height: 50px;
+  color: #ede772;
+}
+
+#right-navigation {
+  text-align: right;
+  color: #ede772;
+}
+
+#patient-notes {
+  border-style: solid;
+  width: 100%;
+  height: 100%;
+  border-color: black;
+  background-color: #012840;
+  border-width: 1px;
+  color: #ede772;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.right-nav-btn {
+  width: 100px;
+  height: 50px;
+  color: #ede772;
+}
+.element {
+  margin-right: 10px;
+}
+
+.screen {
+  border-style: solid;
+  background-color: #012840;
+  padding: 10px;
+}
+
+.screen-element {
+  margin-bottom: 15px;
+}
+
+#copyright {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 30px;
+  border-style: solid;
+  padding: 20px;
+  background-color: #012840;
+  border-color: black;
+  color: #ede772;
+}
+
+.screen-element__day-time {
+  color: #ede772;
+}
+
+.screen-element__element {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 50px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ede772;
+  background-color: #011526;
+}
+
+textarea:focus {
+  outline: solid;
+  border-style: solid;
+  border-radius: 1px;
+  border-color: #ede772;
+}
+
+input:focus {
+  outline: solid;
+  border-style: solid;
+  border-radius: 1px;
+  border-color: #ede772;
+}
+
+.patient-info__input {
+  font-size: 20px;
+  color: #ede772;
+  margin: 10px;
+  display: inline-flex;
+}
+
+button:focus {
+  outline: none;
+}
+
+body {
+  background-color: #011526;
+}
+
+button {
+  background-color: #012840;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  transition: 0.2s;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #012840;
+  background-color: #ede772;
+  transform: translateY(-5px);
+  font-weight: bold;
+}
+
+.screen-element__element-content-container {
+  display: grid;
+  grid-template-columns: 0.65fr 1fr 1fr;
+  padding: 10px;
+  font-size: 20px;
+  color: #ede772;
+  align-items: center;
+}
+
+.screen-element__right-content {
+  justify-self: end;
+}
