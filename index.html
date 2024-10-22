@@ -1,134 +1,167 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"></meta>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </meta>
-    <link rel="stylesheet" href="styles.css"></link>
+    <link rel="stylesheet" href="styles.css">
+    <title>4Eyes</title>
   </head>
 
-  <body>
-    <div id = 'navigation-name-container'>
-        <div id = 'left-navigation'>
-            <button id = 'search-btn' class = 'left-nav-btn'>Search</button>
-            <button id = 'settings-btn' class = 'left-nav-btn'>Settings</button>
-            <button id = 'rolodex-btn' class = 'left-nav-btn'>Rolodex</button>
+  <body> 
+
+    <section class="section" id="navigation-bar__section">
+        <nav id="navigation-bar">
+            <div id="left-nav-buttons__container">
+              <button class="nav__button">Search</button>
+              <button class="nav__button">Settings</button>
+              <button class="nav__button">Rolodex</button>
+            </div>
+            <div id="right-nav-buttons__container">
+              <button class="nav__button">Logout</button>
+            </div>
+          </nav>
+    </section>
+
+
+
+    <section class="section" id="selected-patient__section">
+        <div id="selected-patient__container">
+            <div id="family-members__background"></div>
+            <div id="patient-option-buttons__container">
+                <button class="patient-option__button">Edit</button>
+                <button class="patient-option__button">Move</button>
+            </div>
+            <div id="patient-name-age__container">
+                <div id="full-name__text">Full Name</div>
+                <div id="age__text">Age</div>
+            </div>
+            <textarea id="patient-notes__textarea"></textarea>
         </div>
-        <div id = 'name-age-container'>
-            <div id = 'selected-patient__full-name'>Alex Tetrault</div>
-            <div id = 'selected-patient__age'> 26y 6m</div>
-        </div>
-        <div id="patient-notes-container">
-            <textarea name="" id="patient-notes" cols="30" rows="3"></textarea>
-        </div>
-        <div id = 'right-navigation'>
-            <button id = 'logout-btn' class = 'right-nav-btn'>Logout</button>
-        </div>
-    </div>
+    </section>
+
+
+    <section class="section" id="selected-family__section">
+        <div id="family-info__container">
+            <div id="family-info__grid">
+                <div class="family-info-item__container">
+                    <div class="family-info__text">Family Name: </div>
+                    <input class="family-info__input" type="text">
+                </div>
     
-
-    <div id = 'selected-patient__family-info-container'>
-        <div id = 'left-family-info'>
-            <div class = 'family-info' id = 'selected-patient__family-name'>Family Name <input class="info-input" type="text"></div>
-            <div class = 'family-info' id = 'selected-patient__home-phone'> Home Phone <input class="info-input" type="text"></div>
-
-
-        </div>
-
-        <div id = 'middle-family-info'>
-            <div class = 'family-info' id = 'selected-patient__address'> Address <input class="info-input" style="width: 400px;" type="text"></div>
-            <div class = 'family-info' id = 'selected-patient__unit'> Unit <input class="info-input" style="width: 100px;" type="text"></div>
-            <div class = 'family-info' id = 'selected-patient__city'> City <input class="info-input" style="width: 300px;" type="text"></div>
-            <div class = 'family-info' id = 'selected-patient__province'> Province <input class="info-input" style="width: 200px;" type="text"></div>
-            <div class = 'family-info' id = 'selected-patient__postal-code'> Postal Code <input class="info-input" type="text"></div>
-            <div class = 'family-info' id = 'selected-patient__country'> Country <input class="info-input" style="width: 250px;" type="text"></div>
-        </div>
-
-        <div id = 'right-family-info'>
-            <textarea name="" id="family-notes" cols="30" rows="5"></textarea>
-        </div>
-       
-    </div>
-
-    <div class="container">
-        <div class = 'element'>
-            <div id="side-selection__button-container">
-                <div class = 'side-selection__btn-group'>
-                    <button class = 'side-selection__new-btn'>+</button>
-                    <button class="side-selection-btn">Invoice</button>
+                <div class="family-info-item__container">
+                    <div class="family-info__text">Address: </div>
+                    <input class="family-info__input" type="text">
                 </div>
-                <div class = 'side-selection__btn-group'>
-                    <button class = 'side-selection__new-btn'>+</button>
-                    <button class="side-selection-btn">Exam</button>
+    
+                <div class="family-info-item__container">
+                    <div class="family-info__text">Unit: </div>
+                    <input class="family-info__input" type="text">
                 </div>
-                <div class = 'side-selection__btn-group'>
-                    <button class = 'side-selection__new-btn'>+</button>
-                    <button class="side-selection-btn">Recall</button>
+    
+                <div class="family-info-item__container">
+                    <div class="family-info__text">Home Phone: </div>
+                    <input class="family-info__input" type="text">
                 </div>
-                <div class = 'side-selection__btn-group'>
-                    <button class = 'side-selection__new-btn'>+</button>
-                    <button class="side-selection-btn">Rx</button>
+    
+                <div class="family-info-item__container">
+                    <div class="family-info__text">City: </div>
+                    <input class="family-info__input" type="text">
                 </div>
-                <div class = 'side-selection__btn-group'>
-                    <button class = 'side-selection__new-btn'>+</button>
-                    <button class="side-selection-btn">CL</button>
+    
+                <div class="family-info-item__container">
+                    <div class="family-info__text">Province: </div>
+                    <input class="family-info__input" type="text">
                 </div>
-                <div class = 'side-selection__btn-group'>
-                    <button class = 'side-selection__new-btn'>+</button>
-                    <button class="side-selection-btn">Links</button>
+    
+                <div></div>
+    
+                <div class="family-info-item__container">
+                    <div class="family-info__text">Postal Code: </div>
+                    <input class="family-info__input" type="text">
                 </div>
-                <div id = 'side-selection__last-btn-group'>
-                    <button class = 'side-selection__new-btn'>+</button>
-                    <button class="side-selection-btn">Insurance</button>
-                </div>
-        </div>
-        </div>
-        <div id="patient-info__screen" class = 'screen'>
-            <div id="family-select-add"><button class="add-family-btn">+</button>
-                <select name="" id="family-member-selector">
-                    <option value="">Alexander Tetrault</option>
-                    <option value="">Seanna Tetrault</option>
-                    <option value="">John Tetrault</option>
-                    <option value="">Deni Hanington</option>
-                </select>
-            </div>
-            <div id="patient-info__container">
-                
-                <div class="patient-info__input">First Name <input class="info-input" type="text" name="" id=""></div>
-                <div class="patient-info__input">Middle Name <input class="info-input" type="text" name="" id=""></div>
-                <div class="patient-info__input">Last Name <input class="info-input" type="text" name="" id=""></div>
-                <div class="patient-info__input">Preferred Name <input class="info-input" type="text" name="" id=""></div>
-                <div class="patient-info__input">DOB <input class="info-input" type="text" name="" id=""></div>
-                <div class="patient-info__input">Phone # <input class="info-input" type="text" name="" id=""></div>
-                <div class="patient-info__input">E-mail <input class="info-input" type="text" name="" id=""></div>
-                <div class="patient-info__input">GP <input class="info-input" type="text" name="" id=""></div>
-                <div class="patient-info__input">Occupation <input class="info-input" type="text" name="" id=""></div>
-            </div>
-        </div>
-        <div class = 'screen'>
-            <div class="screen-element">
-                <div class="screen-element__day-time">January 12th, 2024 @ 9:30 A.M.</div>
-                <div class="screen-element__element">
-                    <div class="screen-element__element-content-container">
-                        <div class="screen-element__left-content">Full Exam</div>
-                        <div class="screen-element__middle-content">Dr. Michael Pedersen</div>
-                        <div class="screen-element__right-content">Completed</div>
-                    </div>
+    
+                <div class="family-info-item__container">
+                    <div class="family-info__text">Country: </div>
+                    <input class="family-info__input" type="text">
                 </div>
             </div>
 
-            <div class="screen-element">
-                <div class="screen-element__day-time">January 8th, 2024 @ 11:00 A.M.</div>
-                <div class="screen-element__element">
-                    <div class="screen-element__element-content-container">
-                        <div class="screen-element__left-content">Emergency Exam</div>
-                        <div class="screen-element__middle-content">Dr. Michael Pedersen</div>
-                        <div class="screen-element__right-content">Completed</div>
-                    </div>
-                </div>
-            </div>
+            <textarea id="family-notes__textarea"></textarea>
         </div>
-    </div>
+    </section>
 
-    <div id = 'copyright'>4Eyes</div>
+
+    <section class="section" id="patient-info__section">
+        <div id="patient-info-sections__container">
+            <section id="patient-info-sidebar__section">
+                <div id="patient-sidebar__container">
+                    <button class="add-patient-info__button">+</button>
+                    <button class="select-patient-info__button">Invoice</button>
+
+                    <button class="add-patient-info__button">+</button>
+                    <button class="select-patient-info__button">Exam</button>
+
+                    <button class="add-patient-info__button">+</button>
+                    <button class="select-patient-info__button">Insurance</button>
+
+                    <button class="add-patient-info__button">+</button>
+                    <button class="select-patient-info__button">Recall</button>
+
+                    <button class="add-patient-info__button">+</button>
+                    <button class="select-patient-info__button">Rx</button>
+
+                    <button class="add-patient-info__button">+</button>
+                    <button class="select-patient-info__button">CL</button>
+
+                    <button class="add-patient-info__button">+</button>
+                    <button class="select-patient-info__button">Links</button>
+                </div>
+            </section>
+
+            <section id="patient-info-sidebar__section">
+                <div id="patient-personal-info__container">
+                    <div class="patient-info-label__text">First Name: </div>
+                    <input class="patient-info__input" type="text">
+
+                    <div class="patient-info-label__text">Preferred Name: </div>
+                    <input class="patient-info__input" type="text">
+
+                    <div class="patient-info-label__text">Middle Name: </div>
+                    <input class="patient-info__input" type="text">
+
+                    <div class="patient-info-label__text">Last Name: </div>
+                    <input class="patient-info__input" type="text">
+
+                    <div class="patient-info-label__text">DOB: </div>
+                    <input class="patient-info__input" type="text">
+
+                    <div class="patient-info-label__text">Phone #: </div>
+                    <input class="patient-info__input" type="text">
+
+                    <div class="patient-info-label__text">E-mail: </div>
+                    <input class="patient-info__input" type="text">
+
+                    <div class="patient-info-label__text">OD: </div>
+                    <input class="patient-info__input" type="text">
+
+                    <div class="patient-info-label__text">GP: </div>
+                    <input class="patient-info__input" type="text">
+
+                </div>
+            </section>
+
+            <section id="patient-info-display__section">
+                <div id="window"></div>
+            </section>
+        </div>
+    </section>
+
+
+    <section class="section" id="footer__section">
+        <div id="copyright-info__container">
+            <p class="copyright__text">4Eyes</p>
+        </div>
+    </section>
+
   </body>
 </html>
